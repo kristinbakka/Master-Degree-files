@@ -1,0 +1,51 @@
+
+In this problem we consider a Bayesian model with observations $x_1,\ldots,x_n$ iid $(x_i \,\vline\, \mu,\phi) \sim $N$(\mu, \frac{1}{\phi})$.\todo{variance or standard deviation?}  In sections A.1 through A.5 we adopt a prior where $\mu \sim$N$(0,1)$ and $\phi\sim$Gamma$(1,2)$ are independent.
+%A.1
+\subsection{Generate data set for toy example} \label{sec:A1}
+In order to study MCMC we generate a data set with 20 samples that we will analyze in the following tasks. We choose $\mu=9999$ and $\phi=9999$, and get the following data
+
+\begin{table}[]
+\centering
+\caption{The sample $x_1,\ldots,x_n$ iid $(x_i \,\vline\, \mu,\phi) \sim $N$(\mu, \frac{1}{\phi})$. }
+\label{tab:data}
+\begin{tabular}{llllllllll}
+ &  &  &  &  &  &  &  &  &  \\
+ &  &  &  &  &  &  &  &  & 
+\end{tabular}
+\end{table}
+
+
+%A.2
+\subsection{Full conditional distribution of }
+Now we will find the full conditional distributions of $\mu$ and $\phi$, and find the formulas for the relevant parameters.
+
+
+%A.3
+\subsection{Gibbs sampler}
+-estimate marginal posterior distributions (histograms)\\
+-obs burn-in\\
+-estimate 1) E[], 2), 3)\\
+-run multiple times\\
+-explain observation in intuitive way\\
+
+
+%A.4
+\subsection{Single site random walk proposal Metropolis-Hastings and length of burn-in period}
+-implement for $\mu$ and$\phi$ \\
+-run for different values of tuning parameter \\
+-Discuss: Length of burning period, mixing-properties, limiting distribution \\
+-check A.3 and A.4 simulated stuff consistent \\
+
+%A.5
+\subsection{Block random walk proposal Metropolis-Hastings} \label{seq:A5}
+-implement for $\mu$ and$\phi$ \\
+-run for different values of tuning parameter \\
+-Discuss: Length of burning period, mixing-properties, limiting distribution \\
+-check A.3 and A.5 simulated stuff consistent \\
+
+%A.6
+\subsection{Single site random walk proposal Metropolis-Hastings with new posterior}
+-implement for $\mu$ and$\phi$ \\
+-run for different values of tuning parameter \\
+-Discuss: Length of burning period, mixing-properties, limiting distribution, different priors \\
+-check A.3 and A.6 simulated stuff consistent \\
